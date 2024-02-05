@@ -520,484 +520,159 @@ h1{
 =======================================================================
 =======================================================================
 =========================================media========================= */
-
-@media screen  and (max-width: 400px){
-   
-    #welcome{
-        height:844px;
-        width: 106.5%;
-        background-color:lightblue;
-        background-image: url(./asset/bghdmobile.png);
-        display: flex;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        align-items: center; 
-        flex-direction: column;
-    }
-
-    
-#welcome>#mode{
-    margin-top: 20px;
-    margin-left: 1750px;
-    height: 30px;
-    width: 70px;
-    background-color: transparent;
-    border: 1px solid black;
-    border-radius: 15px;
-    cursor: pointer;
-}
-
-#welcome>#mode {
-    font-size: 18px;
-    position: fixed;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-.sticky{
-    height: 30px;
-    width: 350px;
-    background-color: black;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    position: fixed;
-}
-
-.sticky:hover{
-    height: 50px;
-    width: 250px;
-    background-color: black;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    position: fixed;
-}
-
-.sticky>.ul{
-    height: 80px;
-    list-style-type: none;
-    text-decoration: none;
-    padding-top: 10px;
-    margin-top: -50px;
-    display: flex;
-    justify-content: space-between;
-    margin-left: -25px;
-    margin-right: 30px;
-}
-
-.sticky>.ul:hover{
-    list-style-type: none;
-    text-decoration: none;
-    margin-top: 2px;
-    display: flex;
-    justify-content: space-between;
-    margin-left: 80px;
-    margin-right: 80px;
-}
-
-.sticky>.ul>li{
-    font-size: 15px;
-}
-
-.sticky>.ul>li>a{
-    text-decoration: none;
-    color: white;
-}
-
-#welcome>#iam{
-    margin-top: 400px;
-    font-size: 25px;
-    word-spacing: 15px;
-}
-
-#welcome>#akash{
-    font-size: 90px;
-}
-
-#welcome>#developer{
-    font-size: 30px;
-}
-
-/* ===================================================================profile=============================================================== */
-
-
-#profile{
-    height: 2280px;
-    width: 106.5%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color:lightblue;
-    
-}
-
-.upbox{
-    height: 100%;
-    width: 100%;
-    /* background-color: red; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.pic{
-    height: 44%;
-    width: 100%;
-    display: flex;
-    margin-top: 120px;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.picture{
-    height: 85%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.pic>.picture>#mypic{
-    height: 400px;
-    border-radius: 50px;
-    margin-top: -50px;
-}
-
-.pic>.picture>#mysign{
-    height: 160px;
-    margin-top: 800px;
-    position: absolute;
-    rotate: -10deg;
-}
-
-.iconsbox{
-    height: 300px;
-    width: 80%;
-    margin-top: 100px;
-    display: flex;
-    align-items: end;
-    justify-content: space-around;
-}
-
-
-
-.profilecontent{
-    height: 1150px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.profilecontent>.data{
-    height: 73%;
-    border-radius: 50px;
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 60px;
-    padding-top: 40px;  
-    padding-bottom: 30px;  
-    background-color: rgba(190, 237, 253, 0.433);
-    box-shadow: 0px 0px 50px rgb(159, 158, 158);
-    overflow: hidden;
-}
-
-
-.profilecontent>.data>p{
-    font-size: 25px;
-    text-indent: 105px;
-    line-height: 35px;
-    margin-top: 10px;
-    text-align: justify;
-}
-
-.profilecontent>.data>.downlaod{
-    height: 45px;
-    width: 260px;
-    margin-top: 50px;
-    /* margin-left: 383px; */
-    display: flex;
-    border: 1px solid black;
-    border-radius: 50px;
-    align-items: center;
-}
-
-.downlaod>h3{
-    margin-left: 20px;
-    margin-right: 50px;
-}
-
-.downlaod>a{
-    height: 35px;
-    width: 121px;
-    text-decoration: none;
-    font-size: 18px;
-    color: black;
-    border-radius: 50px;
-    border: 1px solid black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.downlaod:hover{
-    transform: scale(1.05);
-}
-
-.downlaod>a:hover{
-    transition: 3s;
-    background: rgb(140, 223, 239);
-}
-
-.downlaod>a>img{
-    height: 16px;
-
+@media only screen and (max-width: 600px) {
+  /* Welcome section */
+  #welcome {
+    height: 100vh;
+    padding: 0 20px;
+  }
+  #welcome > #mode {
     margin-left: 10px;
-}
-
-
-
-.emailphone{
-    height: 45px;
-    width: 300px;
-    display: flex;
-    border-radius: 50px;
-    justify-content: center;
-    align-items: center;
-    margin-top: 90px;
-    background-color: rgba(190, 237, 253, 0.433);
-    box-shadow: 0px 0px 30px rgb(159, 158, 158);
-}
-
-.emailphone>a{
-    font-size: 10px;
-    text-decoration: none;
-color: black;
-}
-
-.emailphone>a>img{
-    margin-top: -15px;
-    margin-bottom: -8px;
-    margin-right: 5px;
-    height: 28px;
-}
-.emailphone>img{
+    margin-top: 10px;
+    font-size: 14px;
     height: 30px;
-    margin-left: 20px;
-    margin-right: 10px;
-}
-
-
-/* <!-- ================================================================Skill=================================================================== --> */
-
-#skill{
-    height: 1000px;
-    width: 106.5%;
-    padding-top: 40px;
-    background-color:lightblue;
-    display: flex;
+    width: 50px;
+  }
+  #welcome > #iam {
+    margin-top: 250px;
+    font-size: 20px;
+  }
+  #welcome > #akash {
+    font-size: 60px;
+  }
+  #welcome > #developer {
+    font-size: 20px;
+  }
+  
+  /* Profile section */
+  #profile {
+    height: auto;
+    padding: 0 20px;
+  }
+  .upbox {
     flex-direction: column;
-    align-items: center;
-}
-
-.content{
-    height: 850px;
-    width: 98%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.tech{
-    height: 26%;
-    width: 95%;
-    display: flex;
-    flex-direction: column;
-}
-h1{
-    text-align: center;
-    font-size: 50px;
-}
-
-/* <!-- ================================================================Project================================================================ --> */
-
-
-#project{
-    height: 1011px;
-    width: 106.5%;
-    background-color:lightblue;
-    display: flex;
-    flex-direction: column;
-    align-items: center ;
-}
-
-#h
-{
-    text-align: center;
-    font-size: 50px;
-    margin-top: 45px;
-}
-
-#project>.projectbox{
-    height: 80%;
-    width: 95%;
-    margin-top: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-.main{
+  }
+  .pic {
+    width: 100%;
+  }
+  .picture {
+    height: 50%;
+  }
+  .pic > .picture > #mypic {
+    height: 300px;
+    margin-top: -50px;
+  }
+  .pic > .picture > #mysign {
+    height: 100px;
+    margin-top: 250px;
+  }
+  .iconsbox {
+    height: 20%;
+    width: 100%;
+  }
+  .iconsbox > a > img {
+    height: 80px;
+    margin-top: -10px;
+  }
+  .iconsbox > a > #inst {
+    height: 70px;
+    margin-top: -10px;
+  }
+  
+  /* Project section */
+  #project {
+    height: auto;
+    padding: 0 20px;
+  }
+  #project > #h {
+    font-size: 30px;
+  }
+  #project > .projectbox {
+    width: 100%;
+  }
+  .main {
+    width: 45%;
+    height: 30%;
+  }
+  .bigmain {
+    width: 90%;
     height: 45%;
-    width: 27%;
-    border-radius: 25px;
-    overflow: hidden;
-    position: relative;
-    background-color: blueviolet;
-}
-
-.bigmain{
-    height: 45%;
-    width: 43%;
-    border-radius: 25px;
-    overflow: hidden;
-    position: relative;
-    background-color: blueviolet;
-}
-
-.main>img{
+  }
+  .main > img {
     height: 100%;
     width: 100%;
     object-fit: cover;
-}
-
-.mainpic{
+  }
+  .mainpic {
     height: 100%;
     width: 100%;
-    padding: 25px;
+    padding: 15px;
     top: 0;
+    left: 0;
     position: absolute;
     background: #4948487d;
     border-radius: 25px;
     backdrop-filter: blur(20px);
     color: aliceblue;
-}
-
-.rightcome{
-    right: -100%;
-
-}
-
-.leftcome{
-    left: -100%;
-
-}
-
-.main:hover .rightcome{
-    transition: 0.1s;
-    right: 0;
-    }
-
-    .main:hover .leftcome{
-        transition: 0.1s;
-        left: 0;
-        }
-
-.clonetext{
-    background: #0b0a0a7c;
-}
-
-.reacttext{
-    background: #18ace6aa;
-}
-
-.portfoliotext{
-    background: linear-gradient(rgba(255, 0, 0, 0.613),rgba(0, 0, 255, 0.528),rgba(255, 255, 0, 0.509));
-}
-    
-.hibernatetext{
-    background: linear-gradient(rgba(128, 128, 128, 0.582),rgba(128, 128, 128, 0.582),rgba(255, 217, 0, 0.515));
-}
-
-.springtext{
-    background: rgba(18, 129, 18, 0.546);
-}
-
-    .mainpic>p{
-        font-size: 21px;
-        text-shadow: 0px 0px 2px white;
-        text-align: justify;
-        text-indent: 35px;
-    }
-
-/* <!-- =================================================================black================================================================= --> */
-
-
-#blaack{
-    height: 100px;
-    width: 70%;
-    background-color: rgb(0, 0, 0);
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly ;
-}
-.mail{
-    color: white;
-    text-decoration: none;
-}
-
-.mail>img{
-    margin-bottom: -10px;
-    margin-right: 10px;
-    height: 30px;
-}
-
-
-.linkedin{
-    color: white;
-    text-decoration: none;
-}
-
-
-.linkedin>img{
-    height: 28px;
-    margin-right: 10px;
-    margin-bottom: -8px;
-}
-.github{
-    color: white;
-    text-decoration: none;
-}
-
-.github>img{
-    height: 28px;
-    margin-right: 10px;
-    margin-bottom: -10px;
-}
-
-.insta{
-    color: white;
-    text-decoration: none;
-}
-
-.insta>img{
-    margin-bottom: -13px;
-    margin-right: 8px;
-    height: 38px;
-}
-
-.cnumber{
-    color: white;
-    text-decoration: none;
-}
-
-.cnumber>img{
-    margin-bottom: -13px;
-    margin-right: 8px;
-    height: 38px;
-}
-
   }
+  
+  /* Skill section */
+  #skill {
+    height: auto;
+    padding: 0 20px;
+  }
+  .tech {
+    height: 30%;
+    width: 100%;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  
+  /* Footer section */
+  #blaack {
+    height: 80px;
+    padding: 0 20px;
+  }
+  .mail {
+    font-size: 18px;
+  }
+  .mail > img {
+    height: 25px;
+    margin-bottom: -5px;
+    margin-right: 5px;
+  }
+  .linkedin {
+    font-size: 18px;
+  }
+  .linkedin > img {
+    height: 25px;
+    margin-right: 5px;
+    margin-bottom: -5px;
+  }
+  .github {
+    font-size: 18px;
+  }
+  .github > img {
+    height: 25px;
+    margin-right: 5px;
+    margin-bottom: -5px;
+  }
+  .insta {
+    font-size: 18px;
+  }
+  .insta > img {
+    height: 30px;
+    margin-right: 5px;
+    margin-bottom: -5px;
+  }
+  .cnumber {
+    font-size: 18px;
+  }
+  .cnumber > img {
+    height: 30px;
+    margin-right: 5px;
+    margin-bottom: -5px;
+  }
+}
+
